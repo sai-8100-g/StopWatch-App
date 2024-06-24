@@ -1,0 +1,122 @@
+.main-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  padding: 2%;
+  width: 25%;
+  background-image: linear-gradient(
+    to bottom right,
+    transparent,
+    #ffffff 30%,
+    #4682b4,
+    transparent
+  );
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow:
+    0px 0px 5px #87ceeb,
+    -0px -0px 5px #87ceeb;
+}
+
+.content-container > h1 {
+  font-size: 2vw;
+  color: #333333;
+}
+
+.stopwatch-logo-card {
+  display: flex;
+}
+
+.stopwatch-logo-card > img {
+  width: 40%;
+  height: 40%;
+  align-self: center;
+  margin-right: 20%;
+}
+
+.stopwatch-logo-card > h3 {
+  font-size: 2vw;
+}
+.buttons-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 2% 6%;
+  font-weight: bold;
+  font-size: 1.5vw;
+  border: none;
+  border-radius: 4px;
+  margin: 1%;
+}
+
+.start {
+  background-color: #1db05f;
+}
+
+.stop {
+  background-color: #ef0d36;
+}
+
+.reset {
+  background-color: #eaa800;
+}
+
+@media (max-width: 576px) {
+  .main-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-sm-bg.png');
+    height: 100vh;
+    background-size: cover;
+  }
+  .content-container {
+    width: 50%;
+    height: 100px;
+  }
+}
+
+@media (min-width:576px) and (max-width:768px) {
+  .main-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-sm-bg.png');
+    height: 100vh;
+    background-size: cover;
+  }
+  .content-container {
+    width: 50%;
+    height: 200px;
+  }
+}
+
+@media (min-width:768px) and (max-width:992px) {
+  .main-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-sm-bg.png');
+    height: 100vh;
+    background-size: cover;
+  }
+  .content-container {
+    width: 50%;
+    height: 240px;
+  }
+}
+
+
+@media (min-width:992px) and (max-width:1200px) {
+  .content-container{
+    width: 50%;
+    height: 280px;
+  }
+}
+
+
